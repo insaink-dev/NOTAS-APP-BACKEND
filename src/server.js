@@ -14,7 +14,7 @@ const app = express();
 // Configura CORS para permitir solicitudes desde el frontend
 app.use(
     cors({
-        origin: "http://localhost:5173",
+        origin: ["http://localhost:5173", "https://resilient-macaron-ab4d4d.netlify.app/"],
     }),
 );
 
