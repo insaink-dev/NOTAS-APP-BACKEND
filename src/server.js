@@ -14,12 +14,12 @@ const app = express();
 // Configura CORS para permitir solicitudes desde el frontend
 app.use(
     cors({
-        origin: ["http://localhost:5173", "https://resilient-macaron-ab4d4d.netlify.app"],
+        origin: ["http://localhost:5173", "https://resilient-macaron-ab4d4d.netlify.app"], // Reemplaza con la URL de tu frontend si es diferente
     }),
 );
 
 app.use(express.json());
-app.use("/api/notes", notesRoutes);
+app.use("/api/notes", notesRoutes); // Rutas para las notas
 
 const PORT = process.env.PORT || 3001;
 
